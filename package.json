@@ -1,0 +1,64 @@
+{
+  "name": "readable-web-to-node-stream",
+  "version": "0.1.0",
+  "description": "Converts a Web-API readable-stream into a Node readable-stream.",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "del-cli dist/** src/**/*.js src/**/*.js.map src/**/*.d.ts coverage",
+    "compile-dist": "tsc -p src/tsconfig.dist.json",
+    "compile-test": "tsc -p src/tsconfig.spec.json",
+    "prepublishOnly": "yarn run build",
+    "build": "npm run compile-dist",
+    "tslint": "tslint 'src/**/*.ts' --exclude 'src/**/*.d.ts'",
+    "eslint": "eslint karma.conf.js",
+    "lint": "npm run tslint && npm run eslint",
+    "karma": "karma start",
+    "karma-firefox": "karma start --browsers Firefox",
+    "karma-once": "karma start --browsers Chrome --single-run",
+    "travis-karma": "karma start --browsers Firefox --single-run --reporters coverage-istanbul,spec",
+    "browserstack": "karma start --browsers bs_win_chrome_69,bs_win_firefox_62,bs_osx_safari_12,bs_win_edge_17 --single-run --reporters coverage-istanbul,spec",
+    "travis-karma-browserstack": "karma start --browsers bs_win_chrome_69,bs_win_firefox_62,bs_osx_safari_12,bs_win_edge_17 --single-run --reporters coverage-istanbul,spec,BrowserStack",
+    "post-coveralls": "coveralls < coverage/lcov.info",
+    "post-codacy": " codacy-coverage < coverage/lcov.info"
+  },
+  "keywords": [
+    "stream.readable",
+    "web",
+    "stream",
+    "coverter",
+    "readable"
+  ],
+  "repository": "https://github.com/Borewit/readable-web-to-node-stream.git",
+  "author": {
+    "name": "Borewit",
+    "url": "https://github.com/Borewit"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Borewit/readable-web-to-node-stream/issues"
+  },
+  "dependencies": {
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.3.12",
+    "@types/node": "^11.13.8",
+    "coveralls": "^3.0.3",
+    "del-cli": "^1.1.0",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "jasmine-core": "^3.4.0",
+    "karma": "^4.1.0",
+    "karma-browserstack-launcher": "^1.5.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage-istanbul-reporter": "^2.0.5",
+    "karma-jasmine": "^2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "karma-spec-reporter": "^0.0.32",
+    "karma-webpack": "^3.0.5",
+    "music-metadata-browser": "^0.9.1",
+    "ts-loader": "^5.4.5",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0"
+  }
+}
