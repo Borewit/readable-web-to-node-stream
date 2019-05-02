@@ -17,8 +17,8 @@ export class ReadableWeToNodeStream extends Readable {
    * Default web API stream reader
    * https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader
    */
-  private reader: ReadableStreamDefaultReader;
-  private pendingRead: Promise<ReadableStreamReadResult<any>>;
+  private reader: ReadableStreamReader;
+  private pendingRead: Promise<any>;
 
   /**
    *
@@ -30,6 +30,9 @@ export class ReadableWeToNodeStream extends Readable {
   }
 
   /**
+   * Implementation of readable._read(size).
+   * When readable._read() is called, if data is available from the resource,
+   * the implementation should begin pushing that data into the read queue
    * https://nodejs.org/api/stream.html#stream_readable_read_size_1
    */
   public async _read() {
@@ -39,24 +42,25 @@ export class ReadableWeToNodeStream extends Readable {
       return;
     }
     this.pendingRead = this.reader.read();
-    try {
-      const data = await this.pendingRead;
-      if (data.done || this.released) {
-        this.push(null);
-      } else {
-        this.bytesRead += data.value.length;
-        this.push(data.value);
-      }
-    } finally {
-      delete this.pendingRead;
+    const data = await this.pendingRead;
+    // clear the promise before pushing pushing new data to the queue and allow sequential calls to _read()
+    delete this.pendingRead;
+    if (data.done || this.released) {
+      this.push(null); // Signal EOF
+    } else {
+      this.bytesRead += data.value.length;
+      this.push(data.value); // Push new data to the queue
     }
   }
 
+  /**
+   * If there is no unresolved read call to Web-API Readable​Stream immediately returns;
+   * otherwise will wait until the read is resolved.
+   */
   public async waitForReadToComplete() {
     if (this.pendingRead) {
       await this.pendingRead;
     }
-
   }
 
   /**
@@ -71,8 +75,6 @@ export class ReadableWeToNodeStream extends Readable {
     debug(`syncAndRelease()`);
     this.released = true;
     await this.waitForReadToComplete();
-    // Trick to release the reader after the read-promise resolved AND returned
-    await new Promise(resolve => setTimeout(resolve, 1));
     await this.reader.releaseLock();
   }
 }
