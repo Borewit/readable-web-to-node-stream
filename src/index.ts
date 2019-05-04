@@ -6,7 +6,8 @@ const debug = initDebug('readable-web-to-node-stream');
 /**
  * Converts a Web-API stream into Node stream.Readable class
  * Node stream readable: https://nodejs.org/api/stream.html#stream_readable_streams
- * Web API readable-stream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamhttps://nodejs.org/api/stream.html#stream_readable_streams
+ * Web API readable-stream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
+ * Node readable stream: https://nodejs.org/api/stream.html#stream_readable_streams
  */
 export class ReadableWeToNodeStream extends Readable {
 

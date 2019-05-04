@@ -19,7 +19,6 @@
     "paths": {
       "stream": [ "readable-stream" ],
       "assert": [ "assert" ]
-
     }
   }
 }

@@ -10,6 +10,8 @@
 
 # readable-web-stream-to-node
 
+Converts a [Web-API readable stream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader) into a [Node readable stream](https://nodejs.org/api/stream.html#stream_readable_streams).
+
 ### Installation
 Install via [npm](http://npmjs.org/):
 
@@ -21,17 +23,45 @@ or yarn
 yarn add readable-web-to-node-stream
 ```
 
-### Import music-metadata
+## Examples
 
-This is how you can import music-metadata in JavaScript, in you code:
+### Example written in JavaScript
+
+Import readable-web-stream-to-node in JavaScript:
 ```JavaScript
-var mm = require('readable-web-to-node-stream');
+const ReadableWeToNodeStream = require('readable-web-to-node-stream').ReadableWeToNodeStream;
+
+async function download(url) {
+    const response = await fetch(url);
+    const readableWebStream = response.body;
+    const nodeStream = new ReadableWeToNodeStream(readableWebStream);
+}
+
 ```
 
-This is how it's done in TypeScript:
+### Example written in TypeScript
+
 ```TypeScript
-import * as readableWebToNodeStream from 'readable-web-to-node-stream';
+import { ReadableWeToNodeStream } from 'readable-web-to-node-stream';
+
+async function download(url) {
+  const response = await fetch(url);
+  const readableWebStream = response.body;
+  const nodeStream = new ReadableWeToNodeStream(readableWebStream);
+}
 ```
+
+## API
+
+**constructor(stream: ReadableStream): Promise<void>**
+
+`stream: ReadableStream`: the [Web-API readable stream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader).
+
+**close(): Promise<void>**
+Will cancel close the Readable-node stream, and will release Web-API-readable-stream.
+
+**waitForReadToComplete(): Promise<void>**
+If there is no unresolved read call to Web-API Readable​Stream immediately returns, otherwise it will wait until the read is resolved.
 
 ## Licence
 
