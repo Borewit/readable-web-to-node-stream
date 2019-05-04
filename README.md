@@ -8,12 +8,11 @@
 [![Minified size](https://badgen.net/bundlephobia/min/readable-web-to-node-stream)](https://bundlephobia.com/result?p=readable-web-to-node-stream)
 [![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=SWR6dmZVZG1nQkFjM2xuVVBIMk9WcW9qWkE3dS9DZytJL1NJWkhLcERPTT0tLXZieHpCYmsrSHEwSVlZbmx0U1Zaa3c9PQ==--6060c5253c29686ef5db4d67dbe2fbd636932cb4)](https://www.browserstack.com/automate/public-build/SWR6dmZVZG1nQkFjM2xuVVBIMk9WcW9qWkE3dS9DZytJL1NJWkhLcERPTT0tLXZieHpCYmsrSHEwSVlZbmx0U1Zaa3c9PQ==--6060c5253c29686ef5db4d67dbe2fbd636932cb4)
 
-
 # readable-web-stream-to-node
 
 Converts a [Web-API readable stream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader) into a [Node readable stream](https://nodejs.org/api/stream.html#stream_readable_streams).
 
-### Installation
+## Installation
 Install via [npm](http://npmjs.org/):
 
 ```bash
@@ -24,14 +23,14 @@ or yarn
 yarn add readable-web-to-node-stream
 ```
 
-### Compatibility
+## Compatibility
 
 Unit tests are performed on the following browsers:
 
-* Google Chrome 74.0
-* Firefox 68.0
-* Safari 12.0
-* Opera 60.0
+*  Google Chrome 74.0
+*  Firefox 68.0
+*  Safari 12.0
+*  Opera 60.0
  
 ## Examples
 
