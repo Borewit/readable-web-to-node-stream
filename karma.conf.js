@@ -95,6 +95,13 @@ module.exports = config => {
         os_version: '10',
         browser: 'Edge',
         browser_version: '18'
+      },
+      bs_win_opera: {
+        base: 'BrowserStack',
+        os: 'Windows',
+        os_version: '10',
+        browser: 'Opera',
+        browser_version: '60'
       }
     },
 
