@@ -24,6 +24,15 @@ or yarn
 yarn add readable-web-to-node-stream
 ```
 
+### Compatibility
+
+Unit tests are performed on the following browsers:
+
+* Google Chrome 74.0
+* Firefox 68.0
+* Safari 12.0
+* Opera 60.0
+ 
 ## Examples
 
 ### Example written in JavaScript
