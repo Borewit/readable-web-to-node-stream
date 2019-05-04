@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Borewit/readable-web-to-node-stream.svg?branch=master)](https://travis-ci.org/Borewit/readable-web-to-node-stream)
 [![NPM version](https://badge.fury.io/js/readable-web-to-node-stream.svg)](https://npmjs.org/package/readable-web-to-node-stream)
-[![npm downloads](http://img.shields.io/npm/dm/readable-web-to-node-stream.svg)](https://npmjs.org/package/readable-web-to-node-stream)
+[![npm downloads](http://img.shields.io/npm/dm/readable-web-to-node-stream.svg)](https://npmcharts.com/compare/readable-web-to-node-stream)
 [![dependencies Status](https://david-dm.org/Borewit/readable-web-to-node-stream/status.svg)](https://david-dm.org/Borewit/readable-web-to-node-stream)
 [![Known Vulnerabilities](https://snyk.io/test/github/Borewit/readable-web-to-node-stream/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Borewit/readable-web-to-node-stream?targetFile=package.json)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b48f9601e0984734b1962913f70432a6)](https://www.codacy.com/app/Borewit/readable-web-to-node-stream?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Borewit/readable-web-to-node-stream&amp;utm_campaign=Badge_Grade)
