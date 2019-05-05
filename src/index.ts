@@ -40,6 +40,7 @@ export class ReadableWeToNodeStream extends Readable {
     // Should start pushing data into the queue
     // Read data from the underlying Web-API-readable-stream
     if (this.released) {
+      this.push(null); // Signal EOF
       return;
     }
     this.pendingRead = this.reader.read();
