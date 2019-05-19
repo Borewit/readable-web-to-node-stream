@@ -27,7 +27,8 @@
     "web",
     "stream",
     "coverter",
-    "readable"
+    "readable",
+    "readablestream"
   ],
   "repository": "https://github.com/Borewit/readable-web-to-node-stream.git",
   "author": {
