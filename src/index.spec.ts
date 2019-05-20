@@ -4,8 +4,6 @@ import * as assert from 'assert';
 import * as mmb from 'music-metadata-browser';
 import { ReadableWeToNodeStream } from './index';
 
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
-
 async function httpGetByUrl(url: string): Promise<Response> {
   const response = await fetch(url);
   const headers = [];
@@ -148,7 +146,7 @@ describe('Parse WebAmp tracks', () => {
 
       expect(metadata.common.artist).toEqual(track.metaData.artist);
       expect(metadata.common.title).toEqual(track.metaData.title);
-    });
+    }, 20000);
   });
 
 });
