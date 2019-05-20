@@ -6,7 +6,6 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b48f9601e0984734b1962913f70432a6)](https://www.codacy.com/app/Borewit/readable-web-to-node-stream?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Borewit/readable-web-to-node-stream&amp;utm_campaign=Badge_Grade)
 [![Coverage Status](https://coveralls.io/repos/github/Borewit/readable-web-to-node-stream/badge.svg?branch=master)](https://coveralls.io/github/Borewit/readable-web-to-node-stream?branch=master)
 [![Minified size](https://badgen.net/bundlephobia/min/readable-web-to-node-stream)](https://bundlephobia.com/result?p=readable-web-to-node-stream)
-[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=SWR6dmZVZG1nQkFjM2xuVVBIMk9WcW9qWkE3dS9DZytJL1NJWkhLcERPTT0tLXZieHpCYmsrSHEwSVlZbmx0U1Zaa3c9PQ==--6060c5253c29686ef5db4d67dbe2fbd636932cb4)](https://www.browserstack.com/automate/public-build/SWR6dmZVZG1nQkFjM2xuVVBIMk9WcW9qWkE3dS9DZytJL1NJWkhLcERPTT0tLXZieHpCYmsrSHEwSVlZbmx0U1Zaa3c9PQ==--6060c5253c29686ef5db4d67dbe2fbd636932cb4)
 
 # readable-web-stream-to-node
 
