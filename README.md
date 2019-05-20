@@ -24,6 +24,8 @@ yarn add readable-web-to-node-stream
 
 ## Compatibility
 
+Source is written in TypeScript and compiled to ECMAScript 2017 (ES8).
+
 Unit tests are performed on the following browsers:
 
 *   Google Chrome 74.0
