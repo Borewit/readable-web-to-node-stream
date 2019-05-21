@@ -1,7 +1,4 @@
-import * as initDebug from 'debug';
 import { Readable } from 'stream';
-
-const debug = initDebug('readable-web-to-node-stream');
 
 /**
  * Converts a Web-API stream into Node stream.Readable class
@@ -69,12 +66,10 @@ export class ReadableWeToNodeStream extends Readable {
    * Close wrapper
    */
   public async close(): Promise<void> {
-    debug(`close()`);
     await this.syncAndRelease();
   }
 
   private async syncAndRelease() {
-    debug(`syncAndRelease()`);
     this.released = true;
     await this.waitForReadToComplete();
     await this.reader.releaseLock();
