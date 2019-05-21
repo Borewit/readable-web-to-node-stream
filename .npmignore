@@ -1,3 +1,8 @@
 config/
 src/
 coverage/
+readable-web-to-node-stream
+*.iml
+tslint.json
+tsconfig.json
+karma.conf.json
