@@ -5,4 +5,6 @@ readable-web-to-node-stream
 *.iml
 tslint.json
 tsconfig.json
-karma.conf.json
+karma.conf.js
+.travis.yml
+.eslint.rc
