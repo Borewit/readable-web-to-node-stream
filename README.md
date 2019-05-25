@@ -38,7 +38,7 @@ Unit tests are performed on the following browsers:
 ### Example written in JavaScript
 
 Import readable-web-stream-to-node in JavaScript:
-```JavaScript
+```javascript
 const ReadableWeToNodeStream = require('readable-web-to-node-stream').ReadableWeToNodeStream;
 
 async function download(url) {
@@ -46,7 +46,6 @@ async function download(url) {
     const readableWebStream = response.body;
     const nodeStream = new ReadableWeToNodeStream(readableWebStream);
 }
-
 ```
 
 ### Example written in TypeScript
