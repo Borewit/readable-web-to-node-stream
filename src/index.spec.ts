@@ -22,10 +22,9 @@ export async function parseReadableStream(stream: ReadableStream, contentType, o
   return res;
 }
 
-const webAmpTracks = [
+const tiuqottigeloot_vol24_Tracks = [
   {
-    url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/Diablo_Swing_Orchestra_-_01_-_Heroines.mp3',
+    url: '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/01%20-%20Diablo%20Swing%20Orchestra%20-%20Heroines.mp3',
     duration: 322.612245,
     metaData: {
       title: 'Heroines',
@@ -33,17 +32,16 @@ const webAmpTracks = [
     }
   },
   {
-    url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/Eclectek_-_02_-_We_Are_Going_To_Eclecfunk_Your_Ass.mp3',
+    url: '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/02%20-%20Eclectek%20-%20We%20Are%20Going%20To%20Eclecfunk%20Your%20Ass.mp3',
     duration: 190.093061,
     metaData: {
-      title: 'We Are Going To Eclecfunk Your Ass',
+      title: 'We Are Going to Eclecfunk Your Ass',
       artist: 'Eclectek'
     }
   },
   {
     url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/Auto-Pilot_-_03_-_Seventeen.mp3',
+      '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/03%20-%20Auto-Pilot%20-%20Seventeen.mp3',
     duration: 214.622041,
     metaData: {
       title: 'Seventeen',
@@ -52,7 +50,7 @@ const webAmpTracks = [
   },
   {
     url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/Muha_-_04_-_Microphone.mp3',
+      '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/04%20-%20Muha%20-%20Microphone.mp3',
     duration: 181.838367,
     metaData: {
       title: 'Microphone',
@@ -61,7 +59,7 @@ const webAmpTracks = [
   },
   {
     url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/Just_Plain_Ant_-_05_-_Stumble.mp3',
+      '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/05%20-%20Just%20Plain%20Ant%20-%20Stumble.mp3',
     duration: 86.047347,
     metaData: {
       title: 'Stumble',
@@ -70,7 +68,7 @@ const webAmpTracks = [
   },
   {
     url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/Sleaze_-_06_-_God_Damn.mp3',
+      '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/06%20-%20Sleaze%20-%20God%20Damn.mp3',
     duration: 226.795102,
     metaData: {
       title: 'God Damn',
@@ -79,7 +77,7 @@ const webAmpTracks = [
   },
   {
     url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/Juanitos_-_07_-_Hola_Hola_Bossa_Nova.mp3',
+      '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/07%20-%20Juanitos%20-%20Hola%20Hola%20Bossa%20Nova.mp3',
     duration: 207.072653,
     metaData: {
       title: 'Hola Hola Bossa Nova',
@@ -88,16 +86,16 @@ const webAmpTracks = [
   },
   {
     url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/Entertainment_for_the_Braindead_-_08_-_Resolutions_Chris_Summer_Remix.mp3',
+      '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/08%20-%20Entertainment%20For%20The%20Braindead%20-%20Resolutions%20(Chris%20Summer%20Remix).mp3',
     duration: 314.331429,
     metaData: {
-      title: 'Resolutions (Chris Summer Remix)',
+      title: 'Resolutions (Chris Summer remix)',
       artist: 'Entertainment for the Braindead'
     }
   },
   {
     url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/Nobara_Hayakawa_-_09_-_Trail.mp3',
+      '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/09%20-%20Nobara%20Hayakawa%20-%20Trail.mp3',
     duration: 204.042449,
     metaData: {
       title: 'Trail',
@@ -106,7 +104,7 @@ const webAmpTracks = [
   },
   {
     url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/Paper_Navy_-_10_-_Tongue_Tied.mp3',
+      '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/10%20-%20Paper%20Navy%20-%20Tongue%20Tied.mp3',
     duration: 201.116735,
     metaData: {
       title: 'Tongue Tied',
@@ -115,7 +113,7 @@ const webAmpTracks = [
   },
   {
     url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/60_Tigres_-_11_-_Garage.mp3',
+      '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/11%20-%2060%20Tigres%20-%20Garage.mp3',
     duration: 245.394286,
     metaData: {
       title: 'Garage',
@@ -124,10 +122,10 @@ const webAmpTracks = [
   },
   {
     url:
-      'https://raw.githubusercontent.com/captbaritone/webamp-music/4b556fbf/CM_aka_Creative_-_12_-_The_Cycle_Featuring_Mista_Mista.mp3',
+      '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/12%20-%20CM%20aka%20Creative%20-%20The%20Cycle%20(Featuring%20Mista%20Mista).mp3',
     duration: 221.44,
     metaData: {
-      title: 'The Cycle (Featuring Mista Mista)',
+      title: 'The Cycle (feat. Mista Mista)',
       artist: 'CM aka Creative'
     }
   }
@@ -135,13 +133,12 @@ const webAmpTracks = [
 
 describe('Parse WebAmp tracks', () => {
 
-  webAmpTracks.forEach(track => {
+  tiuqottigeloot_vol24_Tracks.forEach(track => {
     it(`track ${track.metaData.artist} - ${track.metaData.title}`, async () => {
 
-      const response = await httpGetByUrl(track.url);
-
+      const url = 'https://raw.githubusercontent.com/Borewit/test-audio/958e057' + track.url;
+      const response = await httpGetByUrl(url);
       const contentType = response.headers.get('Content-Type');
-
       const metadata = await parseReadableStream(response.body, contentType, {});
 
       expect(metadata.common.artist).toEqual(track.metaData.artist);
