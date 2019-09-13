@@ -45,7 +45,7 @@
     "@types/node": "^11.13.8",
     "coveralls": "^3.0.3",
     "del-cli": "^1.1.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.3.0",
     "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine-core": "^3.4.0",
     "karma": "^4.1.0",
