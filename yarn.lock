@@ -397,11 +397,20 @@ assert-plus@1.0.0, assert-plus@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
 
-assert@^1.1.1, assert@^1.4.1:
+assert@^1.1.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/assert/-/assert-1.4.1.tgz#99912d591836b5a6f5b345c0f07eefc08fc65d91"
   dependencies:
     util "0.10.3"
+
+assert@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/assert/-/assert-2.0.0.tgz#95fc1c616d48713510680f2eaf2d10dd22e02d32"
+  dependencies:
+    es6-object-assign "^1.1.0"
+    is-nan "^1.2.1"
+    object-is "^1.0.1"
+    util "^0.12.0"
 
 assign-symbols@^1.0.0:
   version "1.0.0"
@@ -1012,7 +1021,7 @@ constants-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/constants-browserify/-/constants-browserify-1.0.0.tgz#c20b96d8c617748aaf1c16021760cd27fcb8cb75"
 
-content-type@~1.0.4:
+content-type@^1.0.4, content-type@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
 
@@ -1212,7 +1221,7 @@ default-require-extensions@^2.0.0:
   dependencies:
     strip-bom "^3.0.0"
 
-define-properties@^1.1.2, define-properties@^1.1.3:
+define-properties@^1.1.1, define-properties@^1.1.2, define-properties@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/define-properties/-/define-properties-1.1.3.tgz#cf88da6cbee26fe6db7094f61d870cbd84cee9f1"
   dependencies:
@@ -1480,6 +1489,10 @@ es6-iterator@~2.0.3:
     es5-ext "^0.10.35"
     es6-symbol "^3.1.1"
 
+es6-object-assign@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/es6-object-assign/-/es6-object-assign-1.1.0.tgz#c2c3582656247c39ea107cb1e6652b6f9f24523c"
+
 es6-promise@^4.0.3:
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.6.tgz#b685edd8258886365ea62b57d30de28fadcd974f"
@@ -1724,9 +1737,9 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
-file-type@^10.5.0:
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/file-type/-/file-type-10.11.0.tgz#2961d09e4675b9fb9a3ee6b69e9cd23f43fd1890"
+file-type@^12.1.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-12.3.0.tgz#74d755e5dc9c5cbc7ee6f182529b453906ac88c2"
 
 fileset@^2.0.3:
   version "2.0.3"
@@ -2354,6 +2367,12 @@ is-installed-globally@^0.1.0:
     global-dirs "^0.1.0"
     is-path-inside "^1.0.0"
 
+is-nan@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/is-nan/-/is-nan-1.2.1.tgz#9faf65b6fb6db24b7f5c0628475ea71f988401e2"
+  dependencies:
+    define-properties "^1.1.1"
+
 is-npm@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-npm/-/is-npm-1.0.0.tgz#f2fb63a65e4905b406c86072765a1a4dc793b9f4"
@@ -2894,6 +2913,10 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
+media-typer@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-1.1.0.tgz#6ab74b8f2d3320f2064b2a87a38e7931ff3a5561"
+
 memory-fs@^0.4.0, memory-fs@~0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/memory-fs/-/memory-fs-0.4.1.tgz#3a9a20b8462523e447cfbc7e8bb80ed667bfc552"
@@ -3045,27 +3068,29 @@ ms@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
 
-music-metadata-browser@^0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-0.9.1.tgz#52861df5d64a1b2828b0bd6702c1ced7a6c8c70f"
+music-metadata-browser@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-1.4.0.tgz#ef5d13bf96212556cefa9b78c6393e2755e45934"
   dependencies:
-    assert "^1.4.1"
+    assert "^2.0.0"
     buffer "^5.2.1"
     debug "^4.0.1"
-    music-metadata "^3.7.0"
+    music-metadata "^4.6.0"
     readable-stream "^3.3.0"
+    readable-web-to-node-stream "^1.1.4"
     remove "^0.1.5"
     typedarray-to-buffer "^3.1.5"
 
-music-metadata@^3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-3.7.0.tgz#1e3f9ef24b7e555182cd360c874b7ef0b666f707"
+music-metadata@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-4.6.0.tgz#a747ff6f9b00068f624d25701cb1e98145705002"
   dependencies:
+    content-type "^1.0.4"
     debug "^4.1.0"
-    file-type "^10.5.0"
-    media-typer "0.3.0"
-    strtok3 "^2.3.0"
-    token-types "^1.0.1"
+    file-type "^12.1.0"
+    media-typer "^1.1.0"
+    strtok3 "^3.0.1"
+    token-types "^1.0.3"
 
 mute-stream@0.0.7:
   version "0.0.7"
@@ -3241,6 +3266,10 @@ object-copy@^0.1.0:
     copy-descriptor "^0.1.0"
     define-property "^0.2.5"
     kind-of "^3.0.3"
+
+object-is@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/object-is/-/object-is-1.0.1.tgz#0aa60ec9989a0b3ed795cf4d06f62cf1ad6539b6"
 
 object-keys@^1.0.11, object-keys@^1.0.12:
   version "1.1.1"
@@ -3693,6 +3722,10 @@ readable-stream@^3.3.0:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
+
+readable-web-to-node-stream@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/readable-web-to-node-stream/-/readable-web-to-node-stream-1.1.4.tgz#5857d32fb9f791d1c4ca3c297ff028acb41218c6"
 
 readdirp@^2.2.1:
   version "2.2.1"
@@ -4285,12 +4318,12 @@ strip-json-comments@^2.0.1, strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
-strtok3@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-2.3.0.tgz#1f0168ce82c5aa52bf6a567ef44e6c70a69cf514"
+strtok3@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-3.0.1.tgz#67b67c318b44f9fbff97fd94033681ec502fdfa2"
   dependencies:
-    debug "^4.1.0"
-    then-read-stream "^1.5.0"
+    debug "^4.1.1"
+    then-read-stream "^2.0.6"
     token-types "^1.0.1"
 
 supports-color@^2.0.0:
@@ -4371,9 +4404,9 @@ text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
 
-then-read-stream@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/then-read-stream/-/then-read-stream-1.5.0.tgz#1077809ac135f11fc54fb7ae01631dff8b598082"
+then-read-stream@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/then-read-stream/-/then-read-stream-2.0.6.tgz#8d8e2b165b54a1c5f866cb43e2164c1f5f9b85ac"
 
 through2@^2.0.0:
   version "2.0.5"
@@ -4447,6 +4480,10 @@ toidentifier@1.0.0:
 token-types@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/token-types/-/token-types-1.0.1.tgz#c91671bd80f7e2ded10dee4b8ff17247c40378c7"
+
+token-types@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/token-types/-/token-types-1.0.3.tgz#737cc01939d23577ae339b88de82fa3cb3d0b735"
 
 tough-cookie@~2.4.3:
   version "2.4.3"
@@ -4689,6 +4726,16 @@ util@^0.11.0:
   resolved "https://registry.yarnpkg.com/util/-/util-0.11.1.tgz#3236733720ec64bb27f6e26f421aaa2e1b588d61"
   dependencies:
     inherits "2.0.3"
+
+util@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/util/-/util-0.12.1.tgz#f908e7b633e7396c764e694dd14e716256ce8ade"
+  dependencies:
+    inherits "^2.0.3"
+    is-arguments "^1.0.4"
+    is-generator-function "^1.0.7"
+    object.entries "^1.1.0"
+    safe-buffer "^5.1.2"
 
 utils-merge@1.0.1:
   version "1.0.1"
