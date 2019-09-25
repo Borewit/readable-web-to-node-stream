@@ -42,7 +42,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/jasmine": "^3.3.12",
-    "@types/node": "^11.13.8",
+    "@types/node": "^12.7.7",
     "coveralls": "^3.0.3",
     "del-cli": "^1.1.0",
     "eslint": "^5.16.0",
