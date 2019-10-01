@@ -109,5 +109,8 @@ module.exports = config => {
     browsers: ['Chrome'],
     colors: true,
     singleRun: false,
+
+    browserNoActivityTimeout: 60000,
+    browserDisconnectTolerance: 3
   });
 };
