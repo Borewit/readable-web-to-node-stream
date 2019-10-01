@@ -10,7 +10,7 @@ module.exports = config => {
       'jasmine'
     ],
     files: [
-      {pattern: 'src/**/*.spec.ts'}
+      {pattern: 'lib/**/*.spec.ts'}
     ],
     preprocessors: {
       '**/*.ts': 'webpack',
@@ -18,7 +18,7 @@ module.exports = config => {
 
     webpack: {
       mode: 'development',
-      entry: './src/index.ts',
+      entry: './lib/index.ts',
       resolve: {
         extensions: ['.tsx', '.ts', '.js']
       },
@@ -28,13 +28,13 @@ module.exports = config => {
           {
             test: /\.ts$/,
             use: 'ts-loader',
-            include: path.resolve('src')
+            include: path.resolve('lib')
           },
           {
             test: /\.ts$/,
             use: {loader: 'istanbul-instrumenter-loader'},
             enforce: 'post',
-            include: path.resolve('src'),
+            include: path.resolve('lib'),
             exclude: /\.spec\.ts$/
           }
 
