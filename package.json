@@ -2,7 +2,7 @@
   "name": "readable-web-to-node-stream",
   "version": "1.1.4",
   "description": "Converts a Web-API readable-stream into a Node readable-stream.",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "files": [
     "lib/**/*.js",
     "lib/**/*.d.ts"
@@ -10,10 +10,10 @@
   "typings": "lib/index",
   "scripts": {
     "clean": "del-cli lib/**/*.js lib/**/*.js.map lib/**/*.d.ts coverage",
-    "compile-lib": "tsc -p lib/tsconfig.dist.json",
+    "compile-lib": "tsc -p lib/tsconfig.json",
     "compile-test": "tsc -p lib/tsconfig.spec.json",
     "prepublishOnly": "yarn run build",
-    "build": "npm run compile-lib",
+    "build": "npm run compile-lib && npm run compile-test",
     "tslint": "tslint 'lib/**/*.ts' --exclude 'lib/**/*.d.ts'",
     "eslint": "eslint karma.conf.js",
     "lint": "npm run tslint && npm run eslint",
