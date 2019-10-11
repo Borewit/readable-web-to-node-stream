@@ -49,7 +49,7 @@
     "@types/jasmine": "^3.3.12",
     "@types/node": "^12.7.8",
     "coveralls": "^3.0.3",
-    "del-cli": "^1.1.0",
+    "del-cli": "^3.0.0",
     "eslint": "^6.5.1",
     "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine-core": "^3.4.0",
