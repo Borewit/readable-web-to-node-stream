@@ -33,30 +33,16 @@ Unit tests are performed on the following browsers:
 *   Safari 12.0
 *   Opera 60.0
  
-## Examples
-
-### Example written in JavaScript
+## Example
 
 Import readable-web-stream-to-node in JavaScript:
-```javascript
-const ReadableWeToNodeStream = require('readable-web-to-node-stream').ReadableWeToNodeStream;
+```js
+const {ReadableWebToNodeStream} = require('readable-web-to-node-stream');
 
 async function download(url) {
     const response = await fetch(url);
     const readableWebStream = response.body;
-    const nodeStream = new ReadableWeToNodeStream(readableWebStream);
-}
-```
-
-### Example written in TypeScript
-
-```TypeScript
-import { ReadableWeToNodeStream } from 'readable-web-to-node-stream';
-
-async function download(url) {
-  const response = await fetch(url);
-  const readableWebStream = response.body;
-  const nodeStream = new ReadableWeToNodeStream(readableWebStream);
+    const nodeStream = new ReadableWebToNodeStream(readableWebStream);
 }
 ```
 

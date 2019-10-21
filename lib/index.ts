@@ -6,7 +6,7 @@ import { Readable } from 'stream';
  * Web API readable-stream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
  * Node readable stream: https://nodejs.org/api/stream.html#stream_readable_streams
  */
-export class ReadableWeToNodeStream extends Readable {
+export class ReadableWebToNodeStream extends Readable {
 
   public bytesRead: number = 0;
   public released = false;
