@@ -2,7 +2,7 @@ localStorage.debug = 'readable-web-to-node-stream';
 
 import * as assert from 'assert';
 import * as mmb from 'music-metadata-browser';
-import { ReadableWeToNodeStream } from './index';
+import { ReadableWebToNodeStream } from './index';
 
 async function httpGetByUrl(url: string): Promise<Response> {
   const response = await fetch(url);
@@ -16,7 +16,7 @@ async function httpGetByUrl(url: string): Promise<Response> {
 }
 
 export async function parseReadableStream(stream: ReadableStream, contentType, options?: mmb.IOptions): Promise<mmb.IAudioMetadata> {
-  const ns = new ReadableWeToNodeStream(stream);
+  const ns = new ReadableWebToNodeStream(stream);
   const res = await mmb.parseNodeStream(ns, contentType, options);
   await ns.close();
   return res;
