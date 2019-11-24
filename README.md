@@ -9,7 +9,7 @@
 
 # readable-web-stream-to-node
 
-Converts a [Web-API readable stream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader) into a [Node readable stream](https://nodejs.org/api/stream.html#stream_readable_streams).
+Converts a [Web-API readable stream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader) into a [Node.js readable stream](https://nodejs.org/api/stream.html#stream_readable_streams).
 
 ## Installation
 Install via [npm](http://npmjs.org/):
