@@ -30,7 +30,10 @@
   "keywords": [
     "stream.readable",
     "web",
+    "node",
+    "browser",
     "stream",
+    "covert",
     "coverter",
     "readable",
     "readablestream"
