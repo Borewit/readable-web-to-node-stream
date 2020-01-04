@@ -15,9 +15,9 @@ async function httpGetByUrl(url: string): Promise<Response> {
   return response;
 }
 
-export async function parseReadableStream(stream: ReadableStream, contentType, options?: mmb.IOptions): Promise<mmb.IAudioMetadata> {
+export async function parseReadableStream(stream: ReadableStream, fileInfo: mmb.IFileInfo, options?: mmb.IOptions): Promise<mmb.IAudioMetadata> {
   const ns = new ReadableWebToNodeStream(stream);
-  const res = await mmb.parseNodeStream(ns, contentType, options);
+  const res = await mmb.parseNodeStream(ns, fileInfo,  options);
   await ns.close();
   return res;
 }
@@ -138,9 +138,10 @@ describe('Parse WebAmp tracks', () => {
 
       const url = 'https://raw.githubusercontent.com/Borewit/test-audio/958e057' + track.url;
       const response = await httpGetByUrl(url);
-      const contentType = response.headers.get('Content-Type');
-      const metadata = await parseReadableStream(response.body, contentType, {});
-
+      const metadata = await parseReadableStream(response.body, {
+        size: parseInt(response.headers.get('Content-Length'), 10),
+        mimeType: response.headers.get('Content-Type')
+      });
       expect(metadata.common.artist).toEqual(track.metaData.artist);
       expect(metadata.common.title).toEqual(track.metaData.title);
     }, 20000);
