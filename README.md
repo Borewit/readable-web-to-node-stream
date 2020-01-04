@@ -17,7 +17,7 @@ Install via [npm](http://npmjs.org/):
 ```bash
 npm install readable-web-to-node-stream
 ```
-or yarn
+or or [yarn](https://yarnpkg.com/):
 ```bash
 yarn add readable-web-to-node-stream
 ```
