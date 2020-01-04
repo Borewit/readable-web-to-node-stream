@@ -67,7 +67,7 @@
     "karma-webpack": "^4.0.2",
     "music-metadata-browser": "^2.0.0",
     "ts-loader": "^6.2.1",
-    "tslint": "^5.16.0",
+    "tslint": "^5.20.1",
     "typescript": "^3.4.5",
     "webpack": "^4.41.5"
   }
