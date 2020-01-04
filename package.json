@@ -49,7 +49,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/jasmine": "^3.4.4",
+    "@types/jasmine": "^3.5.0",
     "@types/node": "^12.11.1",
     "coveralls": "^3.0.9",
     "del-cli": "^3.0.0",
