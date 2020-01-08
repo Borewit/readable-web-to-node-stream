@@ -7,6 +7,9 @@
     "lib/**/*.js",
     "lib/**/*.d.ts"
   ],
+  "engines": {
+    "node": ">=8"
+  },
   "typings": "lib/index",
   "scripts": {
     "clean": "del-cli lib/**/*.js lib/**/*.js.map lib/**/*.d.ts coverage",
