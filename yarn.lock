@@ -2042,10 +2042,15 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
-file-type@^12.4.2:
-  version "12.4.2"
-  resolved "https://registry.yarnpkg.com/file-type/-/file-type-12.4.2.tgz#a344ea5664a1d01447ee7fb1b635f72feb6169d9"
-  integrity sha512-UssQP5ZgIOKelfsaB5CuGAL+Y+q7EmONuiwF3N5HAH0t27rvrttgi6Ra9k/+DVaY9UF6+ybxu5pOXLUdA8N7Vg==
+file-type@^13.0.3:
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-13.1.0.tgz#5cfeade4745fad9504bb1435b5b5003af272b5a8"
+  integrity sha512-nr4fSvwYSlQl7YmaWS8rsvDrAm6VgCeb2ysHh18+YBSH4RxewhPKUQrj2XRuEMBNnH6E4xw+yWTL7+jiMrh6GA==
+  dependencies:
+    readable-web-to-node-stream "^2.0.0"
+    strtok3 "^5.0.1"
+    token-types "^2.0.0"
+    typedarray-to-buffer "^3.1.5"
 
 fileset@^2.0.3:
   version "2.0.3"
@@ -3550,30 +3555,30 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-music-metadata-browser@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.0.0.tgz#09763a10ff8982232f6cf70446a3154e8a0fcaa8"
-  integrity sha512-NW44TlAy0kcBjhoCE/jfBH2aWyA7T5VYrBtxG5XNg9lmd7ThYENiQE5n5rqOGz/eFPyFHSx48eRqH/hgjKxOAQ==
+music-metadata-browser@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.0.2.tgz#761966445355341c9da55b8ea52c66c7015751ec"
+  integrity sha512-xqmD50w4C1yDkcFkdZsjo2JU+XnMHfsEL0J6sJ5+rg2diLPujqKvNSxQw9yCNsx7n7PXAWcEWCB0kaiOkO596w==
   dependencies:
     assert "^2.0.0"
     buffer "^5.2.1"
     debug "^4.0.1"
-    music-metadata "^6.0.1"
+    music-metadata "^6.2.0"
     readable-stream "^3.3.0"
     readable-web-to-node-stream "^2.0.0"
     remove "^0.1.5"
     typedarray-to-buffer "^3.1.5"
 
-music-metadata@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-6.0.1.tgz#968c25f3a1cb682d80fe5406a1bb180349f9b1b0"
-  integrity sha512-UrscSZs7MBhiGZZQgZHJj9tHdhl2+DLLC0jHhFyoHKUrrTg5SKFlVYmW76NgOk70hSpGiNN4x8s/izVMOs8hyg==
+music-metadata@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-6.2.0.tgz#98772add42d9157e139c8566d7518e1b7915e12a"
+  integrity sha512-meS8f6TR6mpP6xOwOYoLgcpcA2rqaFgf52tPW404uLMSTrGegDPaREeLmXRWzSjhETbykdxDO4eFNh7NbiYBww==
   dependencies:
     content-type "^1.0.4"
     debug "^4.1.0"
-    file-type "^12.4.2"
+    file-type "^13.0.3"
     media-typer "^1.1.0"
-    strtok3 "^5.0.0"
+    strtok3 "^5.0.1"
     token-types "^2.0.0"
 
 mute-stream@0.0.8:
@@ -4031,6 +4036,11 @@ pbkdf2@^3.0.3:
     ripemd160 "^2.0.1"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+peek-readable@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/peek-readable/-/peek-readable-3.1.0.tgz#250b08b7de09db8573d7fd8ea475215bbff14348"
+  integrity sha512-KGuODSTV6hcgdZvDrIDBUkN0utcAVj1LL7FfGbM0viKTtCHmtZcuEJ+lGqsp0fTFkGqesdtemV2yUSMeyy3ddA==
 
 performance-now@^2.1.0:
   version "2.1.0"
@@ -4979,14 +4989,14 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
-strtok3@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-5.0.0.tgz#cf48cdede0b7641eb97e62918abce18441cff688"
-  integrity sha512-HpdgEUSkMqlTjO7uWEBvWHEKBYqXCbVeihlE+sa0keGsfVXspVxye1dPa4OYvnzOJsErzn6ohQU1U/ozcVAPKQ==
+strtok3@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-5.0.1.tgz#f89e09fa024dff82e39c160faf8d8706c24e7d21"
+  integrity sha512-AWliiIjyb87onqO8pM+1Hozm+PPcR4YYIWbFUT5OKQ+tOMwgdT8HwJd/IS8v3/gKdAtE5aE2p3FhcWqryuZPLQ==
   dependencies:
     "@tokenizer/token" "^0.1.0"
     debug "^4.1.1"
-    then-read-stream "^3.0.0"
+    peek-readable "^3.1.0"
 
 supports-color@^2.0.0:
   version "2.0.0"
@@ -5070,11 +5080,6 @@ text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
-
-then-read-stream@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/then-read-stream/-/then-read-stream-3.0.0.tgz#4a4ec37e23f18135b56fbc61670b6e8195e545b2"
-  integrity sha512-4rrXPPD+MRft1kzKj8qe9Lo0qoz+uEkwn6QxWSM4iXux3p7MP72Oq/QJ849/yhmHweOJJI8jJsMjKvAjI33+2A==
 
 through2@^2.0.0:
   version "2.0.5"
