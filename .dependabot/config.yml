@@ -47,3 +47,6 @@ update_configs:
           dependency_name: "typescript"
       - match:
           dependency_name: "webpack"
+      - match:
+          dependency_name: "eslint"
+
