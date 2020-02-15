@@ -71,7 +71,7 @@
     "music-metadata-browser": "^2.0.0",
     "ts-loader": "^6.2.1",
     "tslint": "^6.0.0",
-    "typescript": "^3.4.5",
+    "typescript": "^3.7.5",
     "webpack": "^4.41.6"
   }
 }
