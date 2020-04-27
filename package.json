@@ -70,7 +70,7 @@
     "karma-webpack": "^4.0.2",
     "music-metadata-browser": "^2.0.5",
     "ts-loader": "^7.0.1",
-    "tslint": "^6.1.1",
+    "tslint": "^6.1.2",
     "typescript": "^3.8.3",
     "webpack": "^4.43.0"
   }
