@@ -49,4 +49,7 @@ update_configs:
           dependency_name: "webpack"
       - match:
           dependency_name: "eslint"
-
+      - match:
+          dependency_name: "jasmine-core"
+      - match:
+          dependency_name: "del-cli"
