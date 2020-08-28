@@ -839,10 +839,10 @@ buffer@^4.3.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
-buffer@^5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.5.0.tgz#9c3caa3d623c33dd1c7ef584b89b88bf9c9bc1ce"
-  integrity sha512-9FTEDjLjwoAkEwyMGDjYJQN2gfRgOKBKRfiglhvibGbpeeU/pQn1bJxQqm32OD/AIeEuHxU9roxXxg34Byp/Ww==
+buffer@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.6.0.tgz#a31749dc7d81d84db08abf937b6b8c4033f62786"
+  integrity sha512-/gDYp/UtU0eA1ys8bOs9J6a+E/KWIY+DZ+Q2WESNUA0jFRsJOc0SNUO6xJ5SGA1xueg3NL65W6s+NY5l9cunuw==
   dependencies:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
@@ -1955,13 +1955,13 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
-file-type@^14.1.4:
-  version "14.1.4"
-  resolved "https://registry.yarnpkg.com/file-type/-/file-type-14.1.4.tgz#3ac109f2ea9e8f5573d000ec0c6bcdff07fd46de"
-  integrity sha512-1n6FczX8n73Y/cLjTiMboeTGHfm/i2AWk2oQE7m9a/G5YTCZHCEHEGr32thhLm3iQNUYzTKVQUcYcNHtOLwqgQ==
+file-type@^14.7.1:
+  version "14.7.1"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-14.7.1.tgz#f748732b3e70478bff530e1cf0ec2fe33608b1bb"
+  integrity sha512-sXAMgFk67fQLcetXustxfKX+PZgHIUFn96Xld9uH8aXPdX3xOp0/jg9OdouVTvQrf7mrn+wAa4jN/y9fUOOiRA==
   dependencies:
     readable-web-to-node-stream "^2.0.0"
-    strtok3 "^6.0.0"
+    strtok3 "^6.0.3"
     token-types "^2.0.0"
     typedarray-to-buffer "^3.1.5"
 
@@ -3382,30 +3382,30 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-music-metadata-browser@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.0.5.tgz#ff8662d3c7c0b7e18fd51961e64d9d3517499677"
-  integrity sha512-0wMjzCDUNsudFyFjRCqGhbI7KiPRBo8i2RjZxf25LhNAx0GKYU7oeaAAcwiPeilXqU5PoIcdv/hjgrgysr/Lrw==
+music-metadata-browser@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.1.2.tgz#a7733b9d4542c4fd3f96b0bf499d273fa0978f5e"
+  integrity sha512-ji6KxLX6qHAU67Mmxx/X6PVSrPzb0W0RWltJb9gcs29mERKDKXetfhdKLWlGWOFz+mxNA6Au7PQQkQUOy/sM5A==
   dependencies:
     assert "^2.0.0"
-    buffer "^5.5.0"
+    buffer "^5.6.0"
     debug "^4.0.1"
-    music-metadata "^6.3.7"
+    music-metadata "^7.0.2"
     readable-stream "^3.6.0"
     readable-web-to-node-stream "^2.0.0"
     remove "^0.1.5"
     typedarray-to-buffer "^3.1.5"
 
-music-metadata@^6.3.7:
-  version "6.3.7"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-6.3.7.tgz#5c4f0e1f869c6efcf80cbd3f430c19f81737efda"
-  integrity sha512-YKdEql/iJTxSlNEiPh2bxaS2DhZDluQGwc33K/IZQ68qIgJU1VyhU/Rwho7DQwpX2/7W6GudCpwfjTnDO6/WTQ==
+music-metadata@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.0.2.tgz#5abe30f247fa6536cb69b4b2375fb855ef18ef22"
+  integrity sha512-NJ+iRJnX9SqER4ZkW6JFqYDThZv/ZWxpkSkrX/51Hs9Tb42Be3pPswvVRREPGiZAVYpg0BgAnijeqU3XYOTEmA==
   dependencies:
     content-type "^1.0.4"
     debug "^4.1.0"
-    file-type "^14.1.4"
+    file-type "^14.7.1"
     media-typer "^1.1.0"
-    strtok3 "^6.0.0"
+    strtok3 "^6.0.4"
     token-types "^2.0.0"
 
 nan@^2.12.1:
@@ -4796,14 +4796,13 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
-strtok3@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-6.0.0.tgz#d6b900863daeacfe6c1724c6e7bb36d7a58e83c8"
-  integrity sha512-ZXlmE22LZnIBvEU3n/kZGdh770fYFie65u5+2hLK9s74DoFtpkQIdBZVeYEzlolpGa+52G5IkzjUWn+iXynOEQ==
+strtok3@^6.0.3, strtok3@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-6.0.4.tgz#ede0d20fde5aa9fda56417c3558eaafccc724694"
+  integrity sha512-rqWMKwsbN9APU47bQTMEYTPcwdpKDtmf1jVhHzNW2cL1WqAxaM9iBb9t5P2fj+RV2YsErUWgQzHD5JwV0uCTEQ==
   dependencies:
     "@tokenizer/token" "^0.1.1"
     "@types/debug" "^4.1.5"
-    debug "^4.1.1"
     peek-readable "^3.1.0"
 
 supports-color@^2.0.0:
