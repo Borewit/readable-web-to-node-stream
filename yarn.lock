@@ -1972,10 +1972,10 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
-file-type@^14.7.1:
-  version "14.7.1"
-  resolved "https://registry.yarnpkg.com/file-type/-/file-type-14.7.1.tgz#f748732b3e70478bff530e1cf0ec2fe33608b1bb"
-  integrity sha512-sXAMgFk67fQLcetXustxfKX+PZgHIUFn96Xld9uH8aXPdX3xOp0/jg9OdouVTvQrf7mrn+wAa4jN/y9fUOOiRA==
+file-type@^15.0.1:
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-15.0.1.tgz#54175484953d48b970c095ba8737d4e0c3a9b407"
+  integrity sha512-0LieQlSA3bWUdErNrxzxfI4rhsvNAVPBO06R8pTc1hp9SE6nhqlVyvhcaXoMmtXkBTPnQenbMPLW9X76hH76oQ==
   dependencies:
     readable-web-to-node-stream "^2.0.0"
     strtok3 "^6.0.3"
@@ -3398,28 +3398,28 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-music-metadata-browser@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.1.2.tgz#a7733b9d4542c4fd3f96b0bf499d273fa0978f5e"
-  integrity sha512-ji6KxLX6qHAU67Mmxx/X6PVSrPzb0W0RWltJb9gcs29mERKDKXetfhdKLWlGWOFz+mxNA6Au7PQQkQUOy/sM5A==
+music-metadata-browser@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.1.4.tgz#05146cdef820a097608af75571a336f69b412dcc"
+  integrity sha512-fMRDnSFrMvp3hIYQTgzvVWBLZqEwp166LkAqe1LUHzJS34pYLm8LAqtUvWbGyCBBCCd4K07DA5GJGX4az+l6EA==
   dependencies:
     assert "^2.0.0"
     buffer "^5.6.0"
     debug "^4.0.1"
-    music-metadata "^7.0.2"
+    music-metadata "^7.2.0"
     readable-stream "^3.6.0"
     readable-web-to-node-stream "^2.0.0"
     remove "^0.1.5"
     typedarray-to-buffer "^3.1.5"
 
-music-metadata@^7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.0.2.tgz#5abe30f247fa6536cb69b4b2375fb855ef18ef22"
-  integrity sha512-NJ+iRJnX9SqER4ZkW6JFqYDThZv/ZWxpkSkrX/51Hs9Tb42Be3pPswvVRREPGiZAVYpg0BgAnijeqU3XYOTEmA==
+music-metadata@^7.2.0:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.4.0.tgz#0840e50a0bdf6e04782edacc4895ee75b0815365"
+  integrity sha512-v+fKGWztQ4Q0bHiFLNdGDzaFC+w4Z7ostQ738s9CuOuoNTpF7a2veUg0m1Fx/Aurp9iaQIHnjpmF+YlGrurAdg==
   dependencies:
     content-type "^1.0.4"
     debug "^4.1.0"
-    file-type "^14.7.1"
+    file-type "^15.0.1"
     media-typer "^1.1.0"
     strtok3 "^6.0.4"
     token-types "^2.0.0"
