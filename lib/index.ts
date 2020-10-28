@@ -1,4 +1,4 @@
-import { Readable } from 'stream';
+import { Readable } from 'readable-stream';
 
 /**
  * Converts a Web-API stream into Node stream.Readable class
