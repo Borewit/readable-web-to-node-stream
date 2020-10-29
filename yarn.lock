@@ -1349,12 +1349,12 @@ debug@^3.0.0, debug@^3.1.0, debug@^3.2.6:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@~4.1.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
-  integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
+debug@^4.0.1, debug@^4.1.1, debug@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.2.0.tgz#7f150f93920e94c58f5574c2fd01a3110effe7f1"
+  integrity sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==
   dependencies:
-    ms "^2.1.1"
+    ms "2.1.2"
 
 debug@~3.1.0:
   version "3.1.0"
@@ -1362,6 +1362,13 @@ debug@~3.1.0:
   integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
   dependencies:
     ms "2.0.0"
+
+debug@~4.1.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
+  integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
+  dependencies:
+    ms "^2.1.1"
 
 decamelize-keys@^1.1.0:
   version "1.1.0"
@@ -1989,10 +1996,10 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
-file-type@^15.0.1:
-  version "15.0.1"
-  resolved "https://registry.yarnpkg.com/file-type/-/file-type-15.0.1.tgz#54175484953d48b970c095ba8737d4e0c3a9b407"
-  integrity sha512-0LieQlSA3bWUdErNrxzxfI4rhsvNAVPBO06R8pTc1hp9SE6nhqlVyvhcaXoMmtXkBTPnQenbMPLW9X76hH76oQ==
+file-type@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-16.0.0.tgz#68f8723bf264d67b1002528a247c23c4a63677ca"
+  integrity sha512-0u4D11yDu0NXF+8qp1eiQ/6cOwPI7sbu9/bGzUOhlwzKbB9FYFivgTtsVPtlkXAakfByWjOsLp2/Jx927OVetg==
   dependencies:
     readable-web-to-node-stream "^2.0.0"
     strtok3 "^6.0.3"
@@ -3418,33 +3425,33 @@ ms@2.0.0:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
   integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
 
-ms@^2.1.1:
+ms@2.1.2, ms@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-music-metadata-browser@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.1.4.tgz#05146cdef820a097608af75571a336f69b412dcc"
-  integrity sha512-fMRDnSFrMvp3hIYQTgzvVWBLZqEwp166LkAqe1LUHzJS34pYLm8LAqtUvWbGyCBBCCd4K07DA5GJGX4az+l6EA==
+music-metadata-browser@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.1.5.tgz#c3785c9228fa3d611b0ddbae80d42318e57554ab"
+  integrity sha512-m1ZB1EcqHI6dxjM/zYytMu5Xd0wG9zAds9voIpJPif1wHMrefu2nfnVyDsCfdmbnBY0Qwb6llRxjeX9LoQEc3Q==
   dependencies:
     assert "^2.0.0"
     buffer "^5.6.0"
     debug "^4.0.1"
-    music-metadata "^7.2.0"
+    music-metadata "^7.4.1"
     readable-stream "^3.6.0"
     readable-web-to-node-stream "^2.0.0"
     remove "^0.1.5"
     typedarray-to-buffer "^3.1.5"
 
-music-metadata@^7.2.0:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.4.0.tgz#0840e50a0bdf6e04782edacc4895ee75b0815365"
-  integrity sha512-v+fKGWztQ4Q0bHiFLNdGDzaFC+w4Z7ostQ738s9CuOuoNTpF7a2veUg0m1Fx/Aurp9iaQIHnjpmF+YlGrurAdg==
+music-metadata@^7.4.1:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.4.1.tgz#a1c6e48e72aa3661c0f3278d9bc1333bbbea986c"
+  integrity sha512-wImJchxYyUkF/y2fNNYNYzfJ+EHKUMc14tqhRMRSXGy4g16FUexBU5hBg3/56sm8eqlu0Axgc2/Mdh+XUKfByA==
   dependencies:
     content-type "^1.0.4"
-    debug "^4.1.0"
-    file-type "^15.0.1"
+    debug "^4.2.0"
+    file-type "^16.0.0"
     media-typer "^1.1.0"
     strtok3 "^6.0.4"
     token-types "^2.0.0"
