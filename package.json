@@ -50,7 +50,10 @@
   "bugs": {
     "url": "https://github.com/Borewit/readable-web-to-node-stream/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/readable-stream": "^2.3.9",
+    "readable-stream": "^3.6.0"
+  },
   "devDependencies": {
     "@types/jasmine": "^3.5.14",
     "@types/node": "^14.14.5",
