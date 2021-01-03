@@ -10,7 +10,7 @@
   "engines": {
     "node": ">=8"
   },
-  "typings": "lib/index",
+  "types": "lib/index.d.ts",
   "scripts": {
     "clean": "del-cli lib/**/*.js lib/**/*.js.map lib/**/*.d.ts coverage",
     "compile-lib": "tsc -p lib/tsconfig.json",
