@@ -3,7 +3,7 @@
 [![npm downloads](http://img.shields.io/npm/dm/readable-web-to-node-stream.svg)](https://npmcharts.com/compare/readable-web-to-node-stream)
 [![dependencies Status](https://david-dm.org/Borewit/readable-web-to-node-stream/status.svg)](https://david-dm.org/Borewit/readable-web-to-node-stream)
 [![Known Vulnerabilities](https://snyk.io/test/github/Borewit/readable-web-to-node-stream/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Borewit/readable-web-to-node-stream?targetFile=package.json)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b48f9601e0984734b1962913f70432a6)](https://www.codacy.com/app/Borewit/readable-web-to-node-stream?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Borewit/readable-web-to-node-stream&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d4b511481b3a4634b6ca5c0724407eb9)](https://www.codacy.com/gh/Borewit/peek-readable/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Borewit/peek-readable&amp;utm_campaign=Badge_Grade)
 [![Coverage Status](https://coveralls.io/repos/github/Borewit/readable-web-to-node-stream/badge.svg?branch=master)](https://coveralls.io/github/Borewit/readable-web-to-node-stream?branch=master)
 [![Minified size](https://badgen.net/bundlephobia/min/readable-web-to-node-stream)](https://bundlephobia.com/result?p=readable-web-to-node-stream)
 
