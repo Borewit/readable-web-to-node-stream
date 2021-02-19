@@ -3271,22 +3271,22 @@ ms@2.1.2, ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-music-metadata-browser@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.2.0.tgz#bef3260f66340432557c168eec6fcbe86777c660"
-  integrity sha512-q22oCAwR5RVuvyp0LwcYEa10R4C1OTSiM/nx9vwYJU9qbcgRrrMCw7JtY4QXNfoG9TB4M9J3a9b0adcwQsupAw==
+music-metadata-browser@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.2.5.tgz#3f7a4009a6c9d0da79d8c718609bef1823f44364"
+  integrity sha512-61jWxHGA7b7hTW/iHKSTzbcbbFlt5VWIX6WKR7WHzPnqYkb1JIDV7bTkAzPRk5jYIDHQ/KQIvzbvsXUr2GZ4Ng==
   dependencies:
     buffer "^6.0.3"
     debug "^4.0.1"
-    music-metadata "^7.6.3"
+    music-metadata "^7.8.0"
     readable-stream "^3.6.0"
     readable-web-to-node-stream "^3.0.1"
     typedarray-to-buffer "^4.0.0"
 
-music-metadata@^7.6.3:
-  version "7.6.5"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.6.5.tgz#e05effc74d0f8984f37d0282805e97215a859bc3"
-  integrity sha512-s6btyOxLn4Se81wKr4lXoqNGcO3Y4KMpBb4EPnRdPw1HS2zQSh4RktYRenA7gEcbD70DdwmKFWtrboNx9s8VqA==
+music-metadata@^7.8.0:
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.8.0.tgz#686a60f82b483c5d7a26315e2ed8237523ee53a2"
+  integrity sha512-NRiWHp8XkpfHadrYgpnZ4P5B3+ouLW1gYa1+D1O19NmFK4SglKwQksNzBSNhiIMAY88+3SeSSfbgN0kIMNa5HQ==
   dependencies:
     content-type "^1.0.4"
     debug "^4.3.1"
