@@ -91,22 +91,16 @@ module.exports = config => {
         os: 'Windows',
         os_version: '10',
         browser: 'Edge'
-      },
-      bs_win_opera: {
-        base: 'BrowserStack',
-        os: 'Windows',
-        os_version: '10',
-        browser: 'Opera'
       }
     },
 
     //autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['Chrome', 'Safari', 'Firefox'],
     colors: true,
     singleRun: false,
 
-    browserNoActivityTimeout: 60000,
-    browserDisconnectTolerance: 3,
-    browserDisconnectTimeout: 10000
+    browserNoActivityTimeout: 20000,
+    browserDisconnectTimeout: 30000,
+    browserDisconnectTolerance: 1,
   });
 };
