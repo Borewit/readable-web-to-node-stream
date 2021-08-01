@@ -16,7 +16,7 @@ export class ReadableWebToNodeStream extends Readable {
    * https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader
    */
   private reader: ReadableStreamReader<any>;
-  private pendingRead: Promise<any>;
+  private pendingRead: Promise<any> | undefined;
 
   /**
    *
