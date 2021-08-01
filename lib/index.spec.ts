@@ -138,8 +138,11 @@ describe('Parse WebAmp tracks', () => {
 
       const url = 'https://raw.githubusercontent.com/Borewit/test-audio/958e057' + track.url;
       const response = await httpGetByUrl(url);
+      const contentLength = response.headers.get('Content-Length');
+      expect(response.body).toBeDefined();
+      // @ts-ignore
       const metadata = await parseReadableStream(response.body, {
-        size: parseInt(response.headers.get('Content-Length'), 10),
+        size: contentLength ? parseInt(contentLength, 10) : undefined,
         mimeType: response.headers.get('Content-Type')
       });
       expect(metadata.common.artist).toEqual(track.metaData.artist);
