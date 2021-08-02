@@ -80,29 +80,25 @@ module.exports = config => {
         base: 'BrowserStack',
         os: 'Windows',
         os_version: '10',
-        browser: 'Chrome',
-        browser_version: '88.0'
+        browser: 'Chrome'
       },
       bs_win_firefox: {
         base: 'BrowserStack',
         os: 'Windows',
         os_version: '10',
-        browser: 'Firefox',
-        browser_version: '84.0'
+        browser: 'Firefox'
       },
       bs_osx_safari: {
         base: 'BrowserStack',
         os: 'OS X',
         os_version: 'Big Sur',
-        browser: 'Safari',
-        browser_version: '14'
+        browser: 'Safari'
       },
       bs_win_edge: {
         base: 'BrowserStack',
         os: 'Windows',
         os_version: '10',
-        browser: 'Edge',
-        browser_version: '88'
+        browser: 'Edge'
       }
     },
 
