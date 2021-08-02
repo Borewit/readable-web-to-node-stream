@@ -1,4 +1,4 @@
-name: CI headless unit tests on XVFB
+name: CI browser tests
 
 on: [push]
 

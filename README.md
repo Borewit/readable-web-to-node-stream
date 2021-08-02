@@ -1,4 +1,4 @@
-![Karma CI](https://github.com/Borewit/readable-web-to-node-stream/workflows/Karma%20CI/badge.svg)
+[![CI browser tests](https://github.com/Borewit/readable-web-to-node-stream/actions/workflows/xvfb-ci.yml/badge.svg)](https://github.com/Borewit/readable-web-to-node-stream/actions/workflows/xvfb-ci.yml)
 [![NPM version](https://badge.fury.io/js/readable-web-to-node-stream.svg)](https://npmjs.org/package/readable-web-to-node-stream)
 [![npm downloads](http://img.shields.io/npm/dm/readable-web-to-node-stream.svg)](https://npmcharts.com/compare/readable-web-to-node-stream)
 [![dependencies Status](https://david-dm.org/Borewit/readable-web-to-node-stream/status.svg)](https://david-dm.org/Borewit/readable-web-to-node-stream)
