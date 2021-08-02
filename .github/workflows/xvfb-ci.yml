@@ -1,0 +1,31 @@
+name: CI headless unit tests on XVFB
+
+on: [push]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            browsers: 'Chrome'
+#          - os: macos-latest
+#            browsers: 'Safari'
+#          - os: windows-latest
+#            browsers: 'Edge'
+    runs-on: ${{ matrix.os }}
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: 'Install dependencies'
+        run: yarn install
+
+      - name: 'Compile TypeScript'
+        run: yarn build
+
+      - name: Run XVFB headless test
+        uses: GabrielBB/xvfb-action@v1
+        with:
+          run: yarn run karma-headless  --browsers ${{ matrix.browsers }}

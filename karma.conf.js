@@ -51,7 +51,7 @@ module.exports = config => {
       noInfo: true
     },
 
-    reporters: ['kjhtml', 'dots', 'coverage-istanbul', 'BrowserStack'],
+    reporters: ['kjhtml', 'dots', 'coverage-istanbul'],
     // https://www.npmjs.com/package/karma-coverage-istanbul-reporter
     coverageIstanbulReporter: {
       dir: path.join(__dirname, 'coverage'),
@@ -66,54 +66,11 @@ module.exports = config => {
       combineBrowserReports: true // Combines coverage information from multiple browsers into one report
     },
 
-    // global BrowserStack configuration
-    browserStack: {
-      forcelocal: true,  // force traffic through the local BrowserStack tunnel, passes flag through to BrowserStackTunnel
-      project: 'readable-web-to-node-stream',
-      timeout: 30,  // BROWSERSTACK_IDLE_TIMEOUT
-      captureTimeout: 30
-    },
-
-    // define browsers, see https://www.browserstack.com/automate/capabilities
-    customLaunchers: {
-      bs_win_chrome: {
-        base: 'BrowserStack',
-        os: 'Windows',
-        os_version: '10',
-        browser: 'Chrome'
-      },
-      bs_win_firefox: {
-        base: 'BrowserStack',
-        os: 'Windows',
-        os_version: '10',
-        browser: 'Firefox'
-      },
-      bs_osx_safari: {
-        base: 'BrowserStack',
-        os: 'OS X',
-        os_version: 'Big Sur',
-        browser: 'Safari'
-      },
-      bs_win_edge: {
-        base: 'BrowserStack',
-        os: 'Windows',
-        os_version: '10',
-        browser: 'Edge'
-      }
-    },
-
     mocha: {
       timeout: 20000 // 20 seconds
     },
 
-    //autoWatch: true,
     browsers: ['Chrome'],
-    colors: true,
-
-    // Increase time-outs to prevent disconnects on BrowserStack
-    browserDisconnectTimeout: 10000, // default 2000
-    browserDisconnectTolerance: 1, // default 0
-    browserNoActivityTimeout: 4 * 60 * 1000, //default 10000
-    captureTimeout: 4 * 60 * 1000 //default 60000
+    colors: true
   });
 };
