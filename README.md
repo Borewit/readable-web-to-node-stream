@@ -28,10 +28,7 @@ Source is written in TypeScript and compiled to ECMAScript 2017 (ES8).
 
 Unit tests are performed on the following browsers:
 
-*   Google Chrome 74.0
-*   Firefox 68.0
-*   Safari 12.0
-*   Opera 60.0
+*   Latest Google Chrome 74.0
  
 ## Example
 
