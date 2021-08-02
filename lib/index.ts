@@ -20,7 +20,7 @@ export class ReadableWebToNodeStream extends Readable {
 
   /**
    *
-   * @param stream Readable​Stream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
+   * @param stream ReadableStream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
    */
   constructor(stream: ReadableStream) {
     super();
