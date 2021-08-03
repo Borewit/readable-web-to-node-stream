@@ -21,7 +21,9 @@ module.exports = config => {
       mode: 'development',
       resolve: {
         extensions: ['.tsx', '.ts', '.js'],
-        fallback: {'buffer': require.resolve('buffer/')}
+        alias: {
+          process: 'process/browser'
+        }
       },
       // Ensure buffer is available
       plugins: [
