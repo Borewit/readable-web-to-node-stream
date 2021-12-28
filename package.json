@@ -12,6 +12,7 @@
   },
   "types": "lib/index.d.ts",
   "scripts": {
+    "prepare": "npm run build",
     "clean": "del-cli lib/**/*.js lib/**/*.js.map lib/**/*.d.ts coverage",
     "compile-lib": "tsc -p lib/tsconfig.json",
     "compile-test": "tsc -p lib/tsconfig.spec.json",
