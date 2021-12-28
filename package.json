@@ -29,6 +29,9 @@
     "post-coveralls": "coveralls < coverage/lcov.info",
     "post-codacy": " codacy-coverage < coverage/lcov.info"
   },
+  "precommit": [
+    "build"
+  ],
   "keywords": [
     "stream.readable",
     "web",
