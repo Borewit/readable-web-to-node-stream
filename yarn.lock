@@ -295,10 +295,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jasmine@npm:^3.8.2":
-  version: 3.8.2
-  resolution: "@types/jasmine@npm:3.8.2"
-  checksum: 10c0/8d761de6d9bcf23edd7da7a2fbdcac724cc9ed77e3279e384bf8f9869468864f8940c2a4fc7e4819837836b20bd8e88d63e25b01d76a8b63740f70e5757024ec
+"@types/jasmine@npm:^5.1.5":
+  version: 5.1.5
+  resolution: "@types/jasmine@npm:5.1.5"
+  checksum: 10c0/904a2a6bfe7478478ec73d502708dc4b4cc46fa554c459cee3e0be01efda96fba7d26ef8bec2f246d9163cc517407b135acabcf6f076c11aa514ed9b79bc67e5
   languageName: node
   linkType: hard
 
@@ -4139,7 +4139,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "readable-web-to-node-stream@workspace:."
   dependencies:
-    "@types/jasmine": "npm:^3.8.2"
+    "@types/jasmine": "npm:^5.1.5"
     "@types/node": "npm:^22.13.0"
     "@types/readable-stream": "npm:^2.3.11"
     coveralls: "npm:^3.1.1"
