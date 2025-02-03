@@ -3077,13 +3077,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"karma-firefox-launcher@npm:^2.1.0":
-  version: 2.1.1
-  resolution: "karma-firefox-launcher@npm:2.1.1"
+"karma-firefox-launcher@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "karma-firefox-launcher@npm:2.1.3"
   dependencies:
     is-wsl: "npm:^2.2.0"
-    which: "npm:^2.0.1"
-  checksum: 10c0/eff68028660dd25658e8fa620ea71117ddf9490d3ce4c4e6794ebc01900b0a00ddc674688de96541ffde05932a7da79d300618764d13985956eb68e10d981c57
+    which: "npm:^3.0.0"
+  checksum: 10c0/a01e40349c04d38686c1aec61a118e9d76ce7345ee1f14c947599b4678dd83d3a54059ec9ec4e40ac4a1872b6b2c3925ba89e8db19cabb7564060857b14b790c
   languageName: node
   linkType: hard
 
@@ -4142,7 +4142,7 @@ __metadata:
     karma-chrome-launcher: "npm:^3.1.0"
     karma-coverage-istanbul-reporter: "npm:^3.0.3"
     karma-edge-launcher: "npm:^0.4.2"
-    karma-firefox-launcher: "npm:^2.1.0"
+    karma-firefox-launcher: "npm:^2.1.3"
     karma-jasmine: "npm:^4.0.1"
     karma-jasmine-html-reporter: "npm:^1.7.0"
     karma-safari-launcher: "npm:^1.0.0"
@@ -5366,6 +5366,17 @@ __metadata:
   bin:
     node-which: ./bin/node-which
   checksum: 10c0/66522872a768b60c2a65a57e8ad184e5372f5b6a9ca6d5f033d4b0dc98aff63995655a7503b9c0a2598936f532120e81dd8cc155e2e92ed662a2b9377cc4374f
+  languageName: node
+  linkType: hard
+
+"which@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "which@npm:3.0.1"
+  dependencies:
+    isexe: "npm:^2.0.0"
+  bin:
+    node-which: bin/which.js
+  checksum: 10c0/15263b06161a7c377328fd2066cb1f093f5e8a8f429618b63212b5b8847489be7bcab0ab3eb07f3ecc0eda99a5a7ea52105cf5fa8266bedd083cc5a9f6da24f1
   languageName: node
   linkType: hard
 
