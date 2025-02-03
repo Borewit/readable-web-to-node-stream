@@ -10,6 +10,9 @@
 
 Converts a [Web-API readable stream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader) into a [Node.js readable stream](https://nodejs.org/api/stream.html#stream_readable_streams).
 
+To covert the other way around, from [Node.js readable stream](https://nodejs.org/api/stream.html#stream_readable_streams) to [Web-API readable stream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader), 
+you may use [node-readable-to-web-readable-stream](https://github.com/Borewit/node-readable-to-web-readable-stream).
+
 ## Installation
 Install via [npm](http://npmjs.org/):
 
@@ -26,8 +29,8 @@ yarn add readable-web-to-node-stream
 Source is written in TypeScript and compiled to ECMAScript 2017 (ES8).
 
 Unit tests are performed on the following browsers:
-
 *   Latest Google Chrome 74.0
+
  
 ## Example
 
