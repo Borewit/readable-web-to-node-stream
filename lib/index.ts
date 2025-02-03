@@ -15,14 +15,14 @@ export class ReadableWebToNodeStream extends Readable {
    * Default web API stream reader
    * https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader
    */
-  private reader: ReadableStreamReader<any>;
+  private reader: ReadableStreamDefaultReader;
   private pendingRead: Promise<any> | undefined;
 
   /**
    *
    * @param stream ReadableStream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
    */
-  constructor(stream: ReadableStream) {
+  constructor(stream: ReadableStream | ReadableStream<Uint8Array>) {
     super();
     this.reader = stream.getReader();
   }
@@ -33,7 +33,7 @@ export class ReadableWebToNodeStream extends Readable {
    * the implementation should begin pushing that data into the read queue
    * https://nodejs.org/api/stream.html#stream_readable_read_size_1
    */
-  public async _read() {
+  public async _read(): Promise<void> {
     // Should start pushing data into the queue
     // Read data from the underlying Web-API-readable-stream
     if (this.released) {
@@ -42,7 +42,7 @@ export class ReadableWebToNodeStream extends Readable {
     }
     this.pendingRead = this.reader.read();
     const data = await this.pendingRead;
-    // clear the promise before pushing pushing new data to the queue and allow sequential calls to _read()
+    // clear the promise before pushing new data to the queue and allow sequential calls to _read()
     delete this.pendingRead;
     if (data.done || this.released) {
       this.push(null); // Signal EOF
