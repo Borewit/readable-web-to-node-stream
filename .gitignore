@@ -8,7 +8,11 @@
 /lib/**/*.map
 /lib/**/*.d.ts
 
-# dependencies
+# Yarn
+/.yarn
+yarn-error.log
+
+# NPM
 /node_modules
 
 # IDEs and editors
@@ -33,7 +37,6 @@
 /coverage
 /libpeerconnection.log
 npm-debug.log
-yarn-error.log
 testem.log
 /typings
 
