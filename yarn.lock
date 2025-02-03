@@ -2685,10 +2685,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jasmine-core@npm:^4.5.0":
-  version: 4.5.0
-  resolution: "jasmine-core@npm:4.5.0"
-  checksum: 10c0/23e00677b049b467922ee1a3ca88cf41e6ed22dfec03411e55e48ddcb82bbedb020954ec15114b91007cf3339c09542a171d2742855f26529e62b2826dc7c306
+"jasmine-core@npm:^5.5.0":
+  version: 5.5.0
+  resolution: "jasmine-core@npm:5.5.0"
+  checksum: 10c0/9914f45ce6bcc016d61ee591a8a71dd0d88902ddf5fa887b11966040ce0916379bc4d5f446c07c58226b16f8a0f9719fa201cd92a3f07b02e8c8aa4169448600
   languageName: node
   linkType: hard
 
@@ -3870,7 +3870,7 @@ __metadata:
     coveralls: "npm:^3.1.1"
     del-cli: "npm:^4.0.1"
     istanbul-instrumenter-loader: "npm:^3.0.1"
-    jasmine-core: "npm:^4.5.0"
+    jasmine-core: "npm:^5.5.0"
     karma: "npm:^6.4.1"
     karma-chrome-launcher: "npm:^3.1.0"
     karma-coverage-istanbul-reporter: "npm:^3.0.3"
