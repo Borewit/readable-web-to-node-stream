@@ -1,0 +1,66 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+	"organizeImports": {
+		"enabled": false
+	},
+	"formatter": {
+		"enabled": false
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noForEach": "off"
+			},
+			"suspicious": {
+				"noEmptyBlockStatements": "error",
+				"useErrorMessage": "error"
+			},
+			"nursery":{
+				"noRestrictedImports": {
+					"level": "error",
+					"options": {
+						"paths": {
+							"node:buffer": "Use Uint8Array instead of Buffer"
+						}
+					}
+				}
+			},
+			"correctness": {
+				"noUnusedImports": "error",
+				"noNodejsModules": "error"
+			},
+			"style":{
+				"useConsistentBuiltinInstantiation": "error",
+				"useThrowNewError": "error",
+				"useThrowOnlyError": "error",
+				"noParameterAssign": { "level": "off"}
+			}
+		}
+	},
+	"files": {
+		"ignoreUnknown": true,
+		"ignore": [
+			"./coverage",
+			"./yarn",
+			"./lib/**/*.d.ts",
+			"./lib/**/*.js",
+			"./test/**/*.d.ts",
+			"./test/**/*.js",
+			"./dist"
+		]
+	},
+	"overrides": [
+		{
+			"include": ["./test/**/*", "./karma.conf.js"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noNodejsModules": "off"
+					}
+				}
+			}
+		}
+	]
+}
