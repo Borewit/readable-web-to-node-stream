@@ -73,7 +73,7 @@
     "karma-jasmine-html-reporter": "^1.7.0",
     "karma-safari-launcher": "^1.0.0",
     "karma-spec-reporter": "^0.0.32",
-    "karma-webpack": "^5.0.0",
+    "karma-webpack": "^5.0.1",
     "music-metadata-browser": "^2.5.9",
     "ts-loader": "^9.4.1",
     "typescript": "^5.7.3",
