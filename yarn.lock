@@ -2829,12 +2829,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"karma-chrome-launcher@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "karma-chrome-launcher@npm:3.1.0"
+"karma-chrome-launcher@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "karma-chrome-launcher@npm:3.2.0"
   dependencies:
     which: "npm:^1.2.1"
-  checksum: 10c0/8dd7c545cc1ca397769acd99f45395cce8efb57a5b8ff0f65517f1afa3926c6036cff95722904855e17bc9a156aaa766f6e7bddcd2efb40c7492b525ce37ec45
+  checksum: 10c0/0cec1ae7d922110dc29cee36389d597157c82f019c8917259f9fa93d1f5ee8e19141c2eb74bfe30797cdb3adbc51a6b65fd18a9ebc1527c725c4acf62cd46d04
   languageName: node
   linkType: hard
 
@@ -3872,7 +3872,7 @@ __metadata:
     istanbul-instrumenter-loader: "npm:^3.0.1"
     jasmine-core: "npm:^4.5.0"
     karma: "npm:^6.4.1"
-    karma-chrome-launcher: "npm:^3.1.0"
+    karma-chrome-launcher: "npm:^3.2.0"
     karma-coverage-istanbul-reporter: "npm:^3.0.3"
     karma-edge-launcher: "npm:^0.4.2"
     karma-firefox-launcher: "npm:^2.1.3"
