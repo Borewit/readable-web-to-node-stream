@@ -1229,7 +1229,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"content-type@npm:^1.0.4, content-type@npm:~1.0.4":
+"content-type@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "content-type@npm:1.0.5"
+  checksum: 10c0/b76ebed15c000aee4678c3707e0860cb6abd4e680a598c0a26e17f0bfae723ec9cc2802f0ff1bc6e4d80603719010431d2231018373d4dde10f9ccff9dadf5af
+  languageName: node
+  linkType: hard
+
+"content-type@npm:~1.0.4":
   version: 1.0.4
   resolution: "content-type@npm:1.0.4"
   checksum: 10c0/19e08f406f9ae3f80fb4607c75fbde1f22546647877e8047c9fa0b1c61e38f3ede853f51e915c95fd499c2e1c7478cb23c35cfb804d0e8e0495e8db88cfaed75
@@ -3216,31 +3223,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"music-metadata-browser@npm:^2.5.9":
-  version: 2.5.9
-  resolution: "music-metadata-browser@npm:2.5.9"
+"music-metadata-browser@npm:^2.5.11":
+  version: 2.5.11
+  resolution: "music-metadata-browser@npm:2.5.11"
   dependencies:
     buffer: "npm:^6.0.3"
     debug: "npm:^4.3.4"
-    music-metadata: "npm:^7.12.6"
-    readable-stream: "npm:^4.1.0"
+    music-metadata: "npm:^7.13.3"
+    readable-stream: "npm:^4.3.0"
     readable-web-to-node-stream: "npm:^3.0.2"
-  checksum: 10c0/7d7ab2add80e8c7146e4f15dd9ad86fbf1a265a9aa6541c2b0e50895abd054b76695cc890ce56dc38c4fb83991be4eba2705df05c93e62fa08518cfd4fc49b4d
+  checksum: 10c0/7bdf3517af45f7f24ab0e5d767ab6c1ef6967bb5c919fb3879e19d41a05214990e262ffb08e6c09d56be98e55e4b254ab6deaafa42b6181887bc4e7b721a6809
   languageName: node
   linkType: hard
 
-"music-metadata@npm:^7.12.6":
-  version: 7.13.0
-  resolution: "music-metadata@npm:7.13.0"
+"music-metadata@npm:^7.13.3":
+  version: 7.14.0
+  resolution: "music-metadata@npm:7.14.0"
   dependencies:
     "@tokenizer/token": "npm:^0.3.0"
-    content-type: "npm:^1.0.4"
+    content-type: "npm:^1.0.5"
     debug: "npm:^4.3.4"
     file-type: "npm:^16.5.4"
     media-typer: "npm:^1.1.0"
     strtok3: "npm:^6.3.0"
     token-types: "npm:^4.2.1"
-  checksum: 10c0/8bd8309f98d5a96e294ca3688d36a172f4acde139da344f9def89604ed162425b7baf2116ccab5cd257bde9c0255be55a7701bad03af1fadf8bcca7966d8d1ac
+  checksum: 10c0/fff3401b5cdbaaf8c34a47652b620e4290416c0b5ea734bc38ad71e02722dfc5516e2d30388335b58d280431a95ddb9ca3939a28ec63a7fe99e85696562021e5
   languageName: node
   linkType: hard
 
@@ -3601,19 +3608,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^4.1.0":
-  version: 4.2.0
-  resolution: "readable-stream@npm:4.2.0"
-  dependencies:
-    abort-controller: "npm:^3.0.0"
-    buffer: "npm:^6.0.3"
-    events: "npm:^3.3.0"
-    process: "npm:^0.11.10"
-  checksum: 10c0/b153f9d0db659072427817f7c1e8f5b21ee3ac344000a2e561188df58606852b7744f9be14e63fe5c832b86587a25f60795f40b66e5e66c5f2d6da62149f7e5e
-  languageName: node
-  linkType: hard
-
-"readable-stream@npm:^4.7.0":
+"readable-stream@npm:^4.3.0, readable-stream@npm:^4.7.0":
   version: 4.7.0
   resolution: "readable-stream@npm:4.7.0"
   dependencies:
@@ -3648,7 +3643,7 @@ __metadata:
     karma-safari-launcher: "npm:^1.0.0"
     karma-spec-reporter: "npm:^0.0.36"
     karma-webpack: "npm:^5.0.1"
-    music-metadata-browser: "npm:^2.5.9"
+    music-metadata-browser: "npm:^2.5.11"
     process: "npm:^0.11.10"
     readable-stream: "npm:^4.7.0"
     ts-loader: "npm:^9.5.2"
