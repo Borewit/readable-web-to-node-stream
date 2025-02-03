@@ -8,15 +8,15 @@ import { Readable } from 'readable-stream';
  */
 export class ReadableWebToNodeStream extends Readable {
 
-  public bytesRead: number = 0;
+  public bytesRead = 0;
   public released = false;
 
   /**
    * Default web API stream reader
    * https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader
    */
-  private reader: ReadableStreamDefaultReader;
-  private pendingRead: Promise<any> | undefined;
+  private reader: ReadableStreamDefaultReader<Uint8Array>;
+  private pendingRead: Promise<{ done: boolean; value?: Uint8Array }> | undefined;
 
   /**
    *
@@ -43,10 +43,10 @@ export class ReadableWebToNodeStream extends Readable {
     this.pendingRead = this.reader.read();
     const data = await this.pendingRead;
     // clear the promise before pushing new data to the queue and allow sequential calls to _read()
-    delete this.pendingRead;
+    this.pendingRead = undefined;
     if (data.done || this.released) {
       this.push(null); // Signal EOF
-    } else {
+    } else if (data.value) {
       this.bytesRead += data.value.length;
       this.push(data.value); // Push new data to the queue
     }
