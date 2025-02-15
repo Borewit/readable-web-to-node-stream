@@ -1,4 +1,4 @@
-[![CI browser tests](https://github.com/Borewit/readable-web-to-node-stream/actions/workflows/xvfb-ci.yml/badge.svg)](https://github.com/Borewit/readable-web-to-node-stream/actions/workflows/xvfb-ci.yml)
+[![Node.js CI](https://github.com/Borewit/readable-web-to-node-stream/actions/workflows/ci.yml/badge.svg)](https://github.com/Borewit/readable-web-to-node-stream/actions/workflows/ci.yml)
 [![NPM version](https://badge.fury.io/js/readable-web-to-node-stream.svg)](https://npmjs.org/package/readable-web-to-node-stream)
 [![npm downloads](http://img.shields.io/npm/dm/readable-web-to-node-stream.svg)](https://npmcharts.com/compare/readable-web-to-node-stream)
 [![Known Vulnerabilities](https://snyk.io/test/github/Borewit/readable-web-to-node-stream/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Borewit/readable-web-to-node-stream?targetFile=package.json)
@@ -72,7 +72,7 @@ If there is no unresolved read call to Web-API Readable​Stream immediately ret
 
 (The MIT License)
 
-Copyright (c) 2019 Borewit
+Copyright (c) 2025 Borewit
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
