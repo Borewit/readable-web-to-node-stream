@@ -1,6 +1,6 @@
 {
   "name": "readable-web-to-node-stream",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Converts a Web-API readable-stream into a Node readable-stream.",
   "type": "commonjs",
   "main": "lib/index.js",
