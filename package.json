@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@types/jasmine": "^5.1.5",
+    "@types/jasmine": "^5.1.6",
     "@types/node": "^22.13.4",
     "@types/readable-stream": "^4.0.18",
     "coveralls": "^3.1.1",
