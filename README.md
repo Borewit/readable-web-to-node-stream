@@ -4,7 +4,6 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/Borewit/readable-web-to-node-stream/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Borewit/readable-web-to-node-stream?targetFile=package.json)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/d4b511481b3a4634b6ca5c0724407eb9)](https://www.codacy.com/gh/Borewit/peek-readable/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Borewit/peek-readable&amp;utm_campaign=Badge_Grade)
 [![Coverage Status](https://coveralls.io/repos/github/Borewit/readable-web-to-node-stream/badge.svg?branch=master)](https://coveralls.io/github/Borewit/readable-web-to-node-stream?branch=master)
-[![Minified size](https://badgen.net/bundlephobia/min/readable-web-to-node-stream)](https://bundlephobia.com/result?p=readable-web-to-node-stream)
 
 # readable-web-to-node-stream
 
@@ -26,15 +25,25 @@ yarn add readable-web-to-node-stream
 
 ## Compatibility
 
-Source is written in TypeScript and compiled to ECMAScript 2017 (ES8).
+Version 4 migrated from CommonJS (CJS) to a pure ECMAScript module (ESM).
+The ESM has a _Node_ and a _default_ entry point.
+Source is written in TypeScript and compiled to [ECMAScript ES2020 (ES11)](https://en.wikipedia.org/wiki/ECMAScript_version_history#11th_Edition_%E2%80%93_ECMAScript_2020).
+The _Node_ entry requires a [Node.js ≥ 18](https://nodejs.org/en/about/previous-releases) engine.
 
-Unit tests are performed on the following browsers:
-*   Latest Google Chrome 74.0
+## Usage
 
- 
-## Example
+Example, import readable-web-stream-to-node in JavaScript:
+```js
+import { ReadableWebToNodeStream } from 'readable-web-to-node-stream';
 
-Import readable-web-stream-to-node in JavaScript:
+async function download(url) {
+    const response = await fetch(url);
+    const readableWebStream = response.body;
+    const nodeStream = new ReadableWebToNodeStream(readableWebStream);
+}
+```
+
+For  [Node.js ≥ 22](https://nodejs.org/en/about/previous-releases), should also work in a CommonJS projects:
 ```js
 const {ReadableWebToNodeStream} = require('readable-web-to-node-stream');
 
@@ -44,6 +53,8 @@ async function download(url) {
     const nodeStream = new ReadableWebToNodeStream(readableWebStream);
 }
 ```
+
+For TypeScript / CommonJS projects, not using Node.js ≥ 22, check [load-esm](https://github.com/Borewit/load-esm).
 
 ## API
 

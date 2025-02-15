@@ -1,0 +1,97 @@
+name: Node.js CI
+on:
+  pull_request:
+    branches: [ "master" ]
+  push:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Yarn install
+        run: yarn install
+
+      - name: Lint TypeScript
+        run: yarn run lint-ts
+
+      - name: Build
+        run: yarn run build
+
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: |
+            lib/**/*.js
+            lib/**/*.js.map
+            lib/**/*.d.ts
+            test/**/*.js
+            test/**/*.js.map
+
+  test:
+
+    runs-on: ${{ matrix.os }}
+
+    needs: build
+
+    env:
+      YARN_IGNORE_NODE: 1
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [18.x, 20.x, 22.x]
+
+    steps:
+
+      - name: 'Checkout the repository'
+        uses: actions/checkout@v4
+
+      - name: Test with Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: build
+
+      - name: Test with Node.js ${{ matrix.node-version }}
+        run: yarn run test-coverage
+
+      - name: Coveralls Parallel
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.github_token }}
+          flag-name: run-${{ matrix.test_number }}
+          parallel: true
+
+  finish:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Coveralls Finished
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.github_token }}
+          parallel-finished: true
