@@ -2,15 +2,16 @@
   "name": "readable-web-to-node-stream",
   "version": "3.0.3",
   "description": "Converts a Web-API readable-stream into a Node readable-stream.",
+  "type": "commonjs",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
-    "lib/**/*.js",
-    "lib/**/*.d.ts"
+    "lib/index.js",
+    "lib/index.d.ts"
   ],
   "engines": {
     "node": ">=8"
   },
-  "types": "lib/index.d.ts",
   "scripts": {
     "clean": "del-cli 'lib/**/*.js' 'lib/**/*.js.map' 'lib/**/*.d.ts' 'coverage'",
     "compile-lib": "tsc -p lib/tsconfig.json",
