@@ -317,10 +317,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jasmine@npm:^5.1.5":
-  version: 5.1.5
-  resolution: "@types/jasmine@npm:5.1.5"
-  checksum: 10c0/904a2a6bfe7478478ec73d502708dc4b4cc46fa554c459cee3e0be01efda96fba7d26ef8bec2f246d9163cc517407b135acabcf6f076c11aa514ed9b79bc67e5
+"@types/jasmine@npm:^5.1.6":
+  version: 5.1.6
+  resolution: "@types/jasmine@npm:5.1.6"
+  checksum: 10c0/89f1e182346664e3633997a98117b2cca33142c1c09ab6296255404143136b415453ab6f653b53a9019584e909b8177078a55c3d70b7573500c698971c231cf1
   languageName: node
   linkType: hard
 
@@ -3603,7 +3603,7 @@ __metadata:
   resolution: "readable-web-to-node-stream@workspace:."
   dependencies:
     "@biomejs/biome": "npm:^1.9.4"
-    "@types/jasmine": "npm:^5.1.5"
+    "@types/jasmine": "npm:^5.1.6"
     "@types/node": "npm:^22.13.4"
     "@types/readable-stream": "npm:^4.0.18"
     coveralls: "npm:^3.1.1"
