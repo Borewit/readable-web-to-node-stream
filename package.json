@@ -9,12 +9,8 @@
   },
   "types": "lib/default.d.ts",
   "files": [
-    "lib/node.js",
-    "lib/node.d.ts",
-    "lib/defaultjs",
-    "lib/default.d.ts",
-    "lib/common.js",
-    "lib/common.d.ts"
+    "lib/**/*.js",
+    "lib/**/*.d.ts"
   ],
   "engines": {
     "node": ">=18"
