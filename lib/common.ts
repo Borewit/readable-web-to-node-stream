@@ -1,80 +1,91 @@
-import type { Readable as UserLandReadable } from 'readable-stream';
-import type { Readable as NodeReadable } from 'node:stream';
+import type {Readable as UserLandReadable} from 'readable-stream';
+import type {Readable as NodeReadable} from 'node:stream';
+
+export interface ReadableWebToNodeStreamOptions {
+  propagateDestroy: boolean;
+}
 
 /**
- * Hybrid implementation for Node.js / Web for conversion of a Web-API stream into a Node.js stream.Readable class
- * Node stream readable: https://nodejs.org/api/stream.html#stream_readable_streams
- * Web API readable-stream: https://developer.mozilla.org/docs/Web/API/ReadableStream
+ * A hybrid implementation that converts a Web-API ReadableStream
+ * into a Node.js Readable stream.
+ *
+ * Node.js Readable docs: https://nodejs.org/api/stream.html#stream_readable_streams
+ * Web API ReadableStream docs: https://developer.mozilla.org/docs/Web/API/ReadableStream
  */
 export class CommonReadableWebToNodeStream {
-
+  /** Total bytes pushed to the Node.js stream. */
   public bytesRead = 0;
+
+  /** Flag indicating that the stream has been released/closed. */
   public released = false;
 
-  private pendingRead: Promise<void> | undefined;
+  /** Holds the currently pending read, if any. */
+  private pendingRead: Promise<void> | null = null;
 
-  /**
-   * Default web API stream reader
-   * https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader
-   */
+  /** The underlying Web-API stream reader. */
   private reader: ReadableStreamDefaultReader<Uint8Array>;
 
   /**
-   * @param stream ReadableStream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
+   * @param stream The Web-API ReadableStream to be wrapped.
+   * @param options Options: `{propagateDestroy: boolean}`
    */
-  constructor(stream: ReadableStream | ReadableStream<Uint8Array>) {
+  constructor(stream: ReadableStream<Uint8Array> | ReadableStream, private options: ReadableWebToNodeStreamOptions = {propagateDestroy: false}) {
     this.reader = stream.getReader();
   }
 
   /**
-   * Implementation of readable._read(size).
-   * When readable._read() is called, if data is available from the resource,
-   * the implementation should begin pushing that data into the read queue
-   * https://nodejs.org/api/stream.html#stream_readable_read_size_1
+   * Should be bound to the Node.js Readable._read() method.
+   * This method pushes data into the Node stream's internal queue.
+   *
+   * @param nodeReadable The Node.js stream instance.
    */
   public read(nodeReadable: NodeReadable | UserLandReadable): void {
-    // Should start pushing data into the queue
-    // Read data from the underlying Web-API-readable-stream
     if (this.released) {
       nodeReadable.push(null); // Signal EOF
       return;
     }
-    this.pendingRead = this.reader
-      .read()
-      .then((data) => {
-        this.pendingRead = undefined;
-        if (data.done || this.released) {
+
+    // Use an async IIFE to handle asynchronous reading.
+    this.pendingRead = (async () => {
+      try {
+        const result = await this.reader.read();
+        this.pendingRead = null;
+
+        if (result.done || this.released) {
           nodeReadable.push(null); // Signal EOF
         } else {
-          this.bytesRead += data.value.length;
-          nodeReadable.push(data.value); // Push new data to the queue
+          this.bytesRead += result.value.length;
+          nodeReadable.push(result.value); // Push the chunk into the Node.js stream
         }
-      })
-      .catch((err) => {
-        nodeReadable.destroy(err);
-      });
+      } catch (error) {
+        nodeReadable.destroy(error as Error);
+      }
+    })();
   }
 
   /**
-   * If there is no unresolved read call to Web-API Readable​Stream immediately returns;
-   * otherwise will wait until the read is resolved.
+   * Closes the stream and releasing the underlying stream lock.
+   * Implementation is Readable._destroy()
    */
-  public async waitForReadToComplete() {
-    if (this.pendingRead) {
-      await this.pendingRead;
+  public destroy(error: Error | null, callback: (error?: Error | null) => void) {
+    if (this.options.propagateDestroy ?? false) {
+      // Propagate cancelling stream to Web API Stream
+      this.reader.cancel().then(() => {
+        this.release();
+        callback();
+      }, error => callback(error));
+    } else {
+      this.release();
+      callback(error);
     }
   }
 
   /**
-   * Close wrapper
+   * Marks the stream as released, waits for pending operations,
+   * and releases the underlying reader lock.
    */
-  public async close(): Promise<void> {
-    await this.syncAndRelease();
-  }
-
-  private async syncAndRelease() {
+  private release() {
     this.released = true;
-    await this.waitForReadToComplete();
-    await this.reader.releaseLock();
+    this.reader.releaseLock();
   }
 }
