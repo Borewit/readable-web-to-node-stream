@@ -58,15 +58,11 @@ For TypeScript / CommonJS projects, not using Node.js ≥ 22, check [load-esm](h
 
 ## API
 
-**constructor(stream: ReadableStream): Promise<void>**
+**constructor(stream: ReadableStream, options): Promise<void>**
 
-`stream: ReadableStream`: the [Web-API readable stream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader).
-
-**close(): Promise<void>**
-Will cancel close the Readable-node stream, and will release Web-API-readable-stream.
-
-**waitForReadToComplete(): Promise<void>**
-If there is no unresolved read call to Web-API Readable​Stream immediately returns, otherwise it will wait until the read is resolved.
+- `stream: ReadableStream`: the [Web-API readable stream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStreamDefaultReader).
+- `options?: {propagateDestroy: boolean}`
+  - `propagateDestroy`, default value is `false`, if set to `true`, will also cancel the _stream_ when the Node.js Readable is destroyed. 
 
 ## Licence
 

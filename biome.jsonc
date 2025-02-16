@@ -58,6 +58,9 @@
 				"rules": {
 					"correctness": {
 						"noNodejsModules": "off"
+					},
+					"suspicious": {
+						"noExplicitAny": "off"
 					}
 				}
 			}

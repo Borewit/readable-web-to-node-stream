@@ -1,5 +1,7 @@
 import { Readable } from 'readable-stream'; // Userland Readable
-import { CommonReadableWebToNodeStream } from './common.js';
+import { CommonReadableWebToNodeStream, type ReadableWebToNodeStreamOptions } from './common.js';
+
+export type { ReadableWebToNodeStreamOptions } from './common.js';
 
 /**
  * Converts a Web-API stream into Node stream.Readable class
@@ -12,12 +14,12 @@ export class ReadableWebToNodeStream extends Readable {
   private converter: CommonReadableWebToNodeStream;
 
   /**
-   *
    * @param stream ReadableStream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
+   * @param options Options: `{propagateDestroy: boolean}`
    */
-  constructor(stream: ReadableStream | ReadableStream<Uint8Array>) {
+  constructor(stream: ReadableStream | ReadableStream<Uint8Array>, options?: ReadableWebToNodeStreamOptions) {
     super();
-    this.converter = new CommonReadableWebToNodeStream(stream);
+    this.converter = new CommonReadableWebToNodeStream(stream, options);
   }
 
   /**
@@ -30,10 +32,8 @@ export class ReadableWebToNodeStream extends Readable {
     this.converter.read(this);
   }
 
-  /**
-   * Close wrapper
-   */
-  public async close(): Promise<void> {
-    await this.converter.close();
+  _destroy(error: Error | null, callback: (error?: Error | null) => void) {
+    this.converter.destroy(error, callback);
   }
+
 }
