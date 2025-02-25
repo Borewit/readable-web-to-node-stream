@@ -1079,15 +1079,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"file-type@npm:^20.1.0":
-  version: 20.1.0
-  resolution: "file-type@npm:20.1.0"
+"file-type@npm:^20.2.0":
+  version: 20.2.0
+  resolution: "file-type@npm:20.2.0"
   dependencies:
     "@tokenizer/inflate": "npm:^0.2.6"
     strtok3: "npm:^10.2.0"
     token-types: "npm:^6.0.0"
     uint8array-extras: "npm:^1.4.0"
-  checksum: 10c0/bd7b36358ad515b42b44832c3f4db58523347f18181dcffb00b2ebb4420a843b306cd3045f2b9bcd6613503c612f7b986ebd091b6792d64afee58c6b695f8468
+  checksum: 10c0/b9324a02deba021e4c653ffc7e8d7c9e626eeb0c3fe76538ad88215cccc3736f4a5415d466189d9863be7f20c1993041c2dd2ae0031a1c34fac78c5557a0f9dc
   languageName: node
   linkType: hard
 
@@ -2129,7 +2129,7 @@ __metadata:
     chai: "npm:^5.2.0"
     coveralls: "npm:^3.1.1"
     del-cli: "npm:^6.0.0"
-    file-type: "npm:^20.1.0"
+    file-type: "npm:^20.2.0"
     mocha: "npm:^11.1.0"
     music-metadata-browser: "npm:^2.5.11"
     readable-stream: "npm:^4.7.0"
