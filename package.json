@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@types/chai": "^5.0.1",
+    "@types/chai": "^5.2.1",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.13.4",
     "@types/readable-stream": "^4.0.18",
